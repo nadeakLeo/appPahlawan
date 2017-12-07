@@ -35,7 +35,8 @@ public class PahlawanPage extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.list_pahlawan);
         listView.setAdapter(adapterPahlawan);
 
-        mPahlawanView = (ImageView) findViewById(R.id.foto_pahlawan_view);
+        View inflatedview = getLayoutInflater().inflate(R.layout.list_pahlawan, null);
+        mPahlawanView = (ImageView) inflatedview.findViewById(R.id.foto_pahlawan_view);
         mPahlawanView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
