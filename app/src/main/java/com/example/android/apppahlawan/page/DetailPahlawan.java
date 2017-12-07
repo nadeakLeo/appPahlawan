@@ -16,7 +16,7 @@ public class DetailPahlawan extends AppCompatActivity {
 
         mNamaView = (TextView) findViewById(R.id.nama_pahlawan);
         Intent i = getIntent();
-//        String namaPahlawan = i.getStringExtra("nama_pahlawan");
-//        mNamaView.setText(namaPahlawan);
+        String namaPahlawan = i.getStringExtra("nama_pahlawan");
+        mNamaView.setText(namaPahlawan);
     }
 }
