@@ -9,14 +9,16 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.android.apppahlawan.R;
+<<<<<<< HEAD
+import com.example.android.apppahlawan.control.PahlawanControl;
+import com.example.android.apppahlawan.entity.PahlawanAdapter;
+=======
 import com.example.android.apppahlawan.controller.PahlawanAdapter;
 import com.example.android.apppahlawan.detail_pahlawan;
+>>>>>>> 3d307e78b10703334b7e51192af2a63bd8b6878b
 import com.example.android.apppahlawan.entity.Pahlawan;
 
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
 
 
 public class PahlawanPage extends AppCompatActivity {
@@ -26,11 +28,9 @@ public class PahlawanPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pahlawan);
 
+        PahlawanControl pc = new PahlawanControl();
 
-        final ArrayList<Pahlawan> arrayPahlawan = new ArrayList<Pahlawan>();
-        arrayPahlawan.add(new Pahlawan("Soekarno", "6 Juni 1901", "21 Juni 1970", "Pahlawan Kebanggan", R.drawable.soekarno));
-        arrayPahlawan.add(new Pahlawan("Sisingamangaraja", "1849", "17 Juni 1907", "Pahlawan Anti Takut", R.drawable.sisingamangaraja));
-
+        final ArrayList<Pahlawan> arrayPahlawan = pc.getListPahlawan();
         PahlawanAdapter adapterPahlawan = new PahlawanAdapter(this, arrayPahlawan);
         ListView listView = (ListView) findViewById(R.id.list_pahlawan);
         listView.setAdapter(adapterPahlawan);
