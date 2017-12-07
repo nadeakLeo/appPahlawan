@@ -1,4 +1,4 @@
-package com.example.android.apppahlawan.controller;
+package com.example.android.apppahlawan.entity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -52,4 +52,6 @@ public class PahlawanAdapter extends ArrayAdapter<Pahlawan> {
 
         return itemsView;
     }
+
+
 }
