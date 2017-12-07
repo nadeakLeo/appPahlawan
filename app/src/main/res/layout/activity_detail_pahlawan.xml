@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.apppahlawan.detail_pahlawan"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sisingamangaraja"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nama_pahlawan"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/textColorDark"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2">
+        <TableRow>
+            <TextView
+                android:text="Lahir"
+                android:padding="3dip"
+                android:textColor="@color/textColorDark"/>
+            <TextView
+                android:text="Bakkara, 18 Februari 1845"
+                android:padding="3dip"
+                android:textColor="@color/textColorDark"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Meninggal"
+                android:padding="3dip"
+                android:textColor="@color/textColorDark"/>
+            <TextView
+                android:text="Dairi, 17 Juni 1907"
+                android:padding="3dip"
+                android:textColor="@color/textColorDark"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bigrafi Singkat :"
+        android:textColor="@color/textColorDark"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hulalalalal"
+        android:textColor="@color/textColorDark"/>
+</LinearLayout>

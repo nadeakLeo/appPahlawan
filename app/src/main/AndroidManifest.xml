@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.apppahlawan">
 
-    <uses-permission android:name="android.permission.SET_WALLPAPER">
-    </uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -15,25 +14,25 @@
         <activity android:name=".page.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".page.PahlawanPage"
             android:label="Pahlawan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".page.MainActivity"/>
+                android:value=".page.MainActivity" />
         </activity>
-
         <activity
             android:name=".page.QuotesPage"
             android:label="Quotes">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".page.MainActivity"/>
+                android:value=".page.MainActivity" />
         </activity>
+        <activity android:name=".detail_pahlawan"></activity>
     </application>
 
 </manifest>
