@@ -2,18 +2,14 @@ package com.example.android.apppahlawan.entity;
 
 import java.util.Date;
 
-/**
- * Created by GE60 on 12/7/2017.
- */
-
 public class Pahlawan {
     private String nama;
     private Date tanggalLahir;
     private Date tanggalMeninggal;
     private String biografiSingkat;
-    private String fotoId;
+    private int fotoId;
 
-    public Pahlawan(String nama, Date tanggalLahir, Date tanggalMeninggal, String biografiSingkat, String fotoId) {
+    public Pahlawan(String nama, Date tanggalLahir, Date tanggalMeninggal, String biografiSingkat, int fotoId) {
         this.nama = nama;
         this.tanggalLahir = tanggalLahir;
         this.tanggalMeninggal = tanggalMeninggal;
@@ -53,11 +49,11 @@ public class Pahlawan {
         this.biografiSingkat = biografiSingkat;
     }
 
-    public String getFotoId() {
+    public int getFotoId() {
         return fotoId;
     }
 
-    public void setFotoId(String fotoId) {
+    public void setFotoId(int fotoId) {
         this.fotoId = fotoId;
     }
 
