@@ -15,6 +15,8 @@ import com.example.android.apppahlawan.entity.PahlawanAdapter;
 
 import com.example.android.apppahlawan.entity.Pahlawan;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 
@@ -36,8 +38,13 @@ public class PahlawanPage extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent profilPahlawanIntent = new Intent(PahlawanPage.this, DetailPahlawan.class);
                 Pahlawan pahlawan = arrayPahlawan.get(i);
-                TextView namaPahlawan = (TextView) findViewById(R.id.nama_pahlawan_view);
+
                 profilPahlawanIntent.putExtra("nama_pahlawan", pahlawan.getNama());
+                profilPahlawanIntent.putExtra("lahir_pahlawan", pahlawan.getTanggalLahir());
+                profilPahlawanIntent.putExtra("meninggal_pahlawan", pahlawan.getTanggalMeninggal());
+                profilPahlawanIntent.putExtra("biografi_pahlawan", pahlawan.getBiografiSingkat());
+                profilPahlawanIntent.putExtra("foto_pahlawan", pahlawan.getFotoId());
+
                 startActivity(profilPahlawanIntent);
             }
         });

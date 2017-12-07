@@ -8,9 +8,9 @@
     android:orientation="vertical">
 
     <ImageView
+        android:id="@+id/foto_pahlawan"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/sisingamangaraja"/>
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                 android:padding="3dip"
                 android:textColor="@color/textColorDark"/>
             <TextView
-                android:text="Bakkara, 18 Februari 1845"
+                android:id="@+id/lahir_pahlawan"
                 android:padding="3dip"
                 android:textColor="@color/textColorDark"/>
         </TableRow>
@@ -42,7 +42,7 @@
                 android:padding="3dip"
                 android:textColor="@color/textColorDark"/>
             <TextView
-                android:text="Dairi, 17 Juni 1907"
+                android:id="@+id/meninggal_pahlawan"
                 android:padding="3dip"
                 android:textColor="@color/textColorDark"/>
         </TableRow>
@@ -55,8 +55,8 @@
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"/>
     <TextView
+        android:id="@+id/biografi_pahlawan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="hulalalalal"
         android:textColor="@color/textColorDark"/>
 </LinearLayout>
