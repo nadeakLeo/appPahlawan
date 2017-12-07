@@ -19,20 +19,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".page.PahlawanPage"
-            android:label="Pahlawan">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".page.MainActivity" />
-        </activity>
-        <activity
             android:name=".page.QuotesPage"
             android:label="Quotes">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".page.MainActivity" />
         </activity>
-        <activity android:name=".detail_pahlawan"></activity>
+        <activity android:name=".page.detail_pahlawan"></activity>
     </application>
 
 </manifest>
