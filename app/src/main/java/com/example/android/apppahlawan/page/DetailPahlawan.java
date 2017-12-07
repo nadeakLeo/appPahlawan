@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import com.example.android.apppahlawan.R;
 
-public class detail_pahlawan extends AppCompatActivity {
+public class DetailPahlawan extends AppCompatActivity {
     private TextView mNamaView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

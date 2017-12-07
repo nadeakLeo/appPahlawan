@@ -18,6 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".page.PahlawanPage"
+            android:label="Pahlawan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".page.MainActivity"/>
+        </activity>
+
         <activity
             android:name=".page.QuotesPage"
             android:label="Quotes">
@@ -25,7 +34,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".page.MainActivity" />
         </activity>
-        <activity android:name=".page.detail_pahlawan"></activity>
+        <activity android:name=".page.DetailPahlawan"></activity>
     </application>
 
 </manifest>

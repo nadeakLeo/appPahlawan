@@ -36,7 +36,7 @@ public class PahlawanPage extends AppCompatActivity {
         mPahlawanView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), detail_pahlawan.class);
+                Intent i = new Intent(getApplicationContext(), DetailPahlawan.class);
                 TextView namaPahlawan = (TextView) findViewById(R.id.nama_pahlawan_view);
                 i.putExtra("nama_pahlawan", namaPahlawan.getText().toString());
 
