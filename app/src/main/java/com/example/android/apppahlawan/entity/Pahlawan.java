@@ -4,12 +4,12 @@ import java.util.Date;
 
 public class Pahlawan {
     private String nama;
-    private Date tanggalLahir;
-    private Date tanggalMeninggal;
+    private String tanggalLahir;
+    private String tanggalMeninggal;
     private String biografiSingkat;
     private int fotoId;
 
-    public Pahlawan(String nama, Date tanggalLahir, Date tanggalMeninggal, String biografiSingkat, int fotoId) {
+    public Pahlawan(String nama, String tanggalLahir, String tanggalMeninggal, String biografiSingkat, int fotoId) {
         this.nama = nama;
         this.tanggalLahir = tanggalLahir;
         this.tanggalMeninggal = tanggalMeninggal;
@@ -25,19 +25,19 @@ public class Pahlawan {
         this.nama = nama;
     }
 
-    public Date getTanggalLahir() {
+    public String getTanggalLahir() {
         return tanggalLahir;
     }
 
-    public void setTanggalLahir(Date tanggalLahir) {
+    public void setTanggalLahir(String tanggalLahir) {
         this.tanggalLahir = tanggalLahir;
     }
 
-    public Date getTanggalMeninggal() {
+    public String getTanggalMeninggal() {
         return tanggalMeninggal;
     }
 
-    public void setTanggalMeninggal(Date tanggalMeninggal) {
+    public void setTanggalMeninggal(String tanggalMeninggal) {
         this.tanggalMeninggal = tanggalMeninggal;
     }
 
