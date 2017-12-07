@@ -1,10 +1,12 @@
-package com.example.android.apppahlawan;
+package com.example.android.apppahlawan.page;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.example.android.apppahlawan.R;
 
-public class Pahlawan extends AppCompatActivity {
+
+public class PahlawanPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

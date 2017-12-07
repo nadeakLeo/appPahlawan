@@ -1,6 +1,5 @@
-package com.example.android.apppahlawan;
+package com.example.android.apppahlawan.page;
 
-import android.app.WallpaperManager;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import java.io.IOException;
+import com.example.android.apppahlawan.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         pahlawanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent pahlawanIntent = new Intent(MainActivity.this, Pahlawan.class);
+                Intent pahlawanIntent = new Intent(MainActivity.this, PahlawanPage.class);
                 startActivity(pahlawanIntent);
             }
         });
@@ -34,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         quotesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent quotesIntent = new Intent(MainActivity.this, Quotes.class);
+                Intent quotesIntent = new Intent(MainActivity.this, QuotesPage.class);
                 startActivity(quotesIntent);
             }
         });
