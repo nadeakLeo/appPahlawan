@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.apppahlawan.page.MainActivity">
@@ -9,23 +10,19 @@
     <ImageView
         android:id="@+id/cover_pahlawan"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="App Pahlawan"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        />
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover_pahlawan" />
 
     <Button
         android:id="@+id/pahlawan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pahlawan"
+        android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
-        />
+        android:layout_marginBottom="16dp"
+        android:elevation="10dp"/>
 
     <Button
         android:id="@+id/quotes"
@@ -33,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/pahlawan"
         android:layout_centerHorizontal="true"
-        android:text="Quotes"/>
+        android:text="Quotes"
+        android:elevation="8dp"/>
 
 </RelativeLayout>
