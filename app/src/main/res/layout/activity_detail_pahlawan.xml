@@ -72,13 +72,21 @@
                     android:padding="3dip"
                     android:textColor="@color/textColorDark" />
             </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bigrafi Singkat"
+                    android:textColor="@color/textColorDark" />
+                <TextView
+                    android:text=" : "
+                    android:padding="3dip"
+                    android:textColor="@color/textColorDark"/>
+                <TextView
+                    android:padding="3dip"
+                    android:textColor="@color/textColorDark" />
+            </TableRow>
         </TableLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bigrafi Singkat  :"
-            android:textColor="@color/textColorDark"
-            android:layout_marginTop="8dp" />
         <TextView
             android:id="@+id/biografi_pahlawan"
             android:layout_width="match_parent"
