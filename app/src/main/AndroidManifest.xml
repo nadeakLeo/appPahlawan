@@ -34,7 +34,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".page.MainActivity" />
         </activity>
-        <activity android:name=".page.DetailPahlawan"></activity>
+        <activity
+            android:name=".page.DetailPahlawan"
+            android:label="Profil Pahlawan">
+
+        </activity>
     </application>
 
 </manifest>
