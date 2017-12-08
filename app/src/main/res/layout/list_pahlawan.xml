@@ -4,7 +4,7 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="88dp"
-    android:padding="16dp">
+    android:layout_marginBottom="8dp">
     <ImageView
         android:id="@+id/foto_pahlawan_view"
         android:layout_width="88dp"
